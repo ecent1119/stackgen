@@ -118,6 +118,18 @@ Usage: `stackgen init --profile web-app`
 
 ---
 
+## Common problems this solves
+
+- "generate docker-compose.yml automatically"
+- "docker compose boilerplate generator"
+- "create docker compose file for project"
+- "docker compose template generator"
+- "scaffold local dev environment docker"
+- "create dockerfile and docker-compose together"
+- "docker compose postgres redis node setup"
+
+---
+
 ## Get it
 
 👉 [Download on Gumroad](https://ecent.gumroad.com/l/bmrjdr)
@@ -132,6 +144,10 @@ Usage: `stackgen init --profile web-app`
 | **[dataclean](https://github.com/ecent119/dataclean)** | Reset local dev data safely |
 | **[compose-diff](https://github.com/ecent119/compose-diff)** | Semantic Docker Compose diff |
 | **[devcheck](https://github.com/ecent119/devcheck)** | Local project readiness inspector |
+
+---
+
+If this tool saved you time, consider starring the repo.
 
 ---
 
