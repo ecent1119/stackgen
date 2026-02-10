@@ -120,8 +120,6 @@ Usage: `stackgen init --profile web-app`
 
 ## Get it
 
-**$49** — one-time purchase, standalone macOS/Linux/Windows binary.
-
 👉 [Download on Gumroad](https://ecent.gumroad.com/l/bmrjdr)
 
 ---
