@@ -23,6 +23,23 @@ Generate local dev Docker Compose stacks in minutes.
 
 ---
 
+## Configuration
+
+Create once, regenerate anytime with `stackgen generate`:
+
+```yaml
+# stackgen.yaml
+name: my-app
+datastores:
+  - type: postgres
+  - type: redis
+runtimes:
+  - type: go
+    framework: stdlib
+```
+
+---
+
 ## Example output
 
 Run `stackgen init`, pick Go + Postgres + Redis, get:
@@ -103,9 +120,9 @@ Usage: `stackgen init --profile web-app`
 
 ## Get it
 
-**$29** — one-time purchase, standalone macOS/Linux/Windows binary.
+**$49** — one-time purchase, standalone macOS/Linux/Windows binary.
 
-👉 [Download on Gumroad](YOUR_GUMROAD_LINK_HERE)
+👉 [Download on Gumroad](https://ecent.gumroad.com/l/bmrjdr)
 
 ---
 
@@ -113,10 +130,10 @@ Usage: `stackgen init --profile web-app`
 
 | Tool | Purpose |
 |------|---------|
-| **[envgraph](https://github.com/stackgen-cli/envgraph)** | Scan and validate environment variable usage |
-| **[dataclean](https://github.com/stackgen-cli/dataclean)** | Reset local dev data safely |
-| **[compose-diff](https://github.com/stackgen-cli/compose-diff)** | Semantic Docker Compose diff |
-| **[devcheck](https://github.com/stackgen-cli/devcheck)** | Local project readiness inspector |
+| **[envgraph](https://github.com/ecent119/envgraph)** | Scan and validate environment variable usage |
+| **[dataclean](https://github.com/ecent119/dataclean)** | Reset local dev data safely |
+| **[compose-diff](https://github.com/ecent119/compose-diff)** | Semantic Docker Compose diff |
+| **[devcheck](https://github.com/ecent119/devcheck)** | Local project readiness inspector |
 
 ---
 

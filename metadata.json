@@ -1,0 +1,29 @@
+{
+  "product": {
+    "name": "stackgen",
+    "tagline": "Generate local dev Docker Compose stacks in minutes",
+    "description": "Interactive TUI to select databases, caches, and runtimes. Preset profiles for common stacks. Multi-stage Dockerfiles with security best practices. Auto-generated .env with secrets.",
+    "price": {
+      "amount": 15.00,
+      "currency": "USD",
+      "type": "one-time"
+    },
+    "category": "Developer Tools",
+    "tags": ["docker", "docker-compose", "scaffold", "generator", "cli", "devops", "tui"],
+    "platforms": ["darwin-amd64", "darwin-arm64", "linux-amd64", "linux-arm64", "windows-amd64"],
+    "requirements": {
+      "os": ["macOS", "Linux", "Windows"],
+      "dependencies": ["docker"]
+    },
+    "links": {
+      "documentation": "https://github.com/stackgen-cli/stackgen",
+      "support": "https://github.com/stackgen-cli/stackgen/issues"
+    },
+    "metadata": {
+      "license": "Proprietary",
+      "author": "StackGen CLI",
+      "created": "2024-01-01",
+      "version": "1.0.0"
+    }
+  }
+}
