@@ -1,0 +1,32 @@
+# stackgen generated .gitignore
+
+# Environment files with secrets
+.env
+.env.local
+.env.*.local
+
+# Docker volumes (if using bind mounts)
+data/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Dependencies (language-specific)
+node_modules/
+vendor/
+__pycache__/
+*.pyc
+target/
+bin/
+obj/

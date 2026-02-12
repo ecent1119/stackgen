@@ -1,0 +1,61 @@
+# GoReleaser configuration for stackgen
+# Run: goreleaser release --snapshot --clean
+# Builds for: Linux x64, Windows x64, macOS Silicon, macOS Intel
+
+version: 2
+
+project_name: stackgen
+
+before:
+  hooks:
+    - go mod tidy
+
+builds:
+  - id: stackgen
+    main: .
+    binary: stackgen
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - darwin
+      - linux
+      - windows
+    goarch:
+      - amd64
+      - arm64
+    ignore:
+      - goos: windows
+        goarch: arm64
+      - goos: linux
+        goarch: arm64
+    ldflags:
+      - -s -w
+      - -X github.com/stackgen-cli/stackgen/cmd.version={{.Version}}
+
+archives:
+  - id: default
+    name_template: "{{ .ProjectName }}-{{ .Version }}-{{ .Os }}-{{ .Arch }}"
+    format: zip
+    files:
+      - README.md
+      - LICENSE
+      - DISCLAIMER.md
+      - CHANGELOG.md
+
+checksum:
+  name_template: "checksums.txt"
+  algorithm: sha256
+
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - "^docs:"
+      - "^test:"
+      - "^ci:"
+      - "^chore:"
+
+release:
+  draft: true
+  prerelease: auto
+  name_template: "DevStack v{{.Version}}"
